@@ -9,3 +9,6 @@ def divisibleByFifteen(number):
 
 def divisibleByFive(number):
     return divisible(number, 5)
+
+def divisibleByThree(number):
+    return divisible(number, 3)

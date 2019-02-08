@@ -31,3 +31,12 @@ def test_divisibleByFifteen(input1, expected):
 
 def test_divisibleByFive(input1, expected):
     assert fizzbuzz.divisibleByFive(input1) == expected
+
+
+@pytest.mark.parametrize("input1 ,expected", [
+    (6, True),
+    (7, False),
+])
+
+def test_divisibleByThree(input1, expected):
+    assert fizzbuzz.divisibleByThree(input1) == expected
